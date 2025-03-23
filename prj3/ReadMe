@@ -1,0 +1,12 @@
+Project 3: Concurrent Stock Server
+Overview
+This project implements a Concurrent Stock Server that handles simultaneous client requests. The server supports listing, buying, and selling stocks, using two different concurrency models: an event-driven approach and a thread-based approach.
+
+Project Tasks
+Task 1: Implement the event-driven approach using select() to manage multiple clients.
+Task 2: Use a thread-based approach with pthread to manage client connections via a pool of worker threads.
+Task 3: Evaluate the performance of both implementations by measuring elapsed time with different numbers of clients.
+Features
+Stock Management: Load stock data from a stock.txt file and update it in memory. Operations include show, buy, and sell.
+Binary Tree Structure: Store stock data in a binary tree structure for efficient access and updates, implementing fine-grained locking to handle the readers-writers problem.
+Performance Analysis: Run experiments with various client configurations and record throughput to analyze scalability.
